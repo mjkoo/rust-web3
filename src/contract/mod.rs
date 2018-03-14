@@ -263,7 +263,7 @@ mod tests {
       let token = contract(&transport);
 
       // when
-      token.query("balanceOf", (Address::from(5)), None, Options::default(), None).wait().unwrap()
+      token.query("balanceOf", Address::from(5), None, Options::default(), None).wait().unwrap()
     };
 
     // then
